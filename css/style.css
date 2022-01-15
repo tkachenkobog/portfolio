@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+h1{
+    font-family: dosis, sans-serif;
+    font-size: 3em;
+}
 .card img:hover{
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
@@ -8,29 +15,6 @@
      margin-top:12rem; 
      margin-bottom: 12rem;
 }
-@media   (max-width: 600.98px) {
-    .col-4{
-        display: none;
-    }
-    #textTop{
-        width: 90%;
-      
-    }
-    .filter-btns_item{
-        display: none;
-    }
-    .row{
-        justify-content: center;
-     }
-    
-}
-@media (min-width: 600px){
-    #filter-options{
-        display: none;
-    }
-   
-}
-
 
 .body{
     min-width: 500px;
@@ -105,6 +89,22 @@ a:focus:after {
     margin-bottom: 3rem;
     margin-top: 3rem;
 }
+#wayDates{
+    font-size: 20px;
+    margin-top:-37px;
+    margin-bottom: 0;
+    color: #64bee3;
+}
+
+strong{
+    font-family: dosis;
+    font-size: 25px;
+}
+#wayDescr{
+    font-family: roboto;
+    font-size: 20px;
+   
+}
   .events span {
     padding  : 0 1.5em 1.5em 1.5em;
     position : relative;
@@ -120,9 +120,11 @@ a:focus:after {
   }
   
   .events strong {
+      
      display: block;
   }
  .events li{
+     
      min-width: 380px;
  }
  .filter-content img{
@@ -138,8 +140,8 @@ a:focus:after {
  }
  .filter{
     
-   
-     margin:1rem;
+    
+     margin-top:1rem;
     justify-content: center;
      display: flex;
  }
@@ -150,7 +152,7 @@ a:focus:after {
 	line-height: 1; 
 	text-decoration: none;
      margin: 1rem;
-     font-size: 18px;
+     font-size: 25px;
  }
  .filter-btns_item:after{
     display: block;
@@ -170,9 +172,17 @@ a:focus:after {
     flex-wrap: wrap;
      display: flex;
      justify-content: center;
-     margin:1rem;
+     margin-top:1rem;
+
+ }
+ #filter-options{
+     background-color: white;
+ }
+ .filter-content h1{
+     font-size: 40px;
  }
  .card_cont{
+
      display: flex;
      justify-content: center;
    
@@ -212,8 +222,9 @@ a:focus:after {
     margin:1rem;
 }
 #block:hover .overleys {
-    opacity: 0.9;
+    opacity: 0.95;
   }
+
 #blockText{
     display: flex;
     flex-direction: column;
@@ -254,7 +265,7 @@ form{
  flex-direction: column;
  justify-content: center;
  align-items: center;
- width: 80%;
+ width: 100%;
 }
 .contacter{
     margin-top: 12rem;
@@ -265,12 +276,14 @@ form{
     justify-content: center;
 }
 textarea{
+    height: 120px;
     width:40%;
     margin: 0.5rem;
     padding: 10px;
     border:0;
     border-bottom:1px solid coral;
 }
+
 .myBtn{
     color:coral;
     border:1px solid coral;
@@ -295,4 +308,47 @@ textarea{
 .blueBtn:hover{
     color:white;
     background-color: #64bee3;
+}
+.container-work-with img{
+    width: 60%;
+}
+.container-work-with{
+    margin-top: 5rem;
+}
+@media   (max-width: 600.98px) {
+    .col-4{
+        display: none;
+    }
+    #textTop{
+        width: 90%;
+        font-size: 0.8em;
+      
+    }
+  
+    .filter-btns_item{
+        display: none;
+    }
+    .row{
+        justify-content: center;
+     }
+     .overleys{
+         height: 81%;
+     }
+    .container-work-with img{
+        width: 90%;
+    }
+    input[type=text]{
+        width: 60%;
+    }
+    textarea{
+        width: 60%;
+    }
+}
+@media (min-width: 600px){
+    #filter-options{
+
+        display: none;
+    }
+    
+   
 }
