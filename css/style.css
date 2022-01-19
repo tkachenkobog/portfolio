@@ -15,7 +15,12 @@ h1{
      margin-top:12rem; 
      margin-bottom: 12rem;
 }
-
+#more{
+    height: 20px; 
+    width: 20px; 
+    margin-left:38px;
+    
+}
 .body{
     min-width: 500px;
 }  
@@ -39,15 +44,14 @@ select{
     border-radius: 5px;
     padding: 0.5em 1em;
 }
-  a {
-	position: relative;
-	color: #64bee3; 
+#underline {
+	position: relative;	 
 	cursor: pointer;
 	line-height: 1; 
 	text-decoration: none;
 
 }
-a:after {
+#underline:after {
 	display: block;
 	position: absolute;
 	left: 0; 
@@ -58,9 +62,29 @@ a:after {
 	transition: width 0.3s ease-out; 
 }
 
-a:hover:after,
-a:focus:after {
+#underline:hover:after,
+#underline:focus:after {
 	width: 100%; 
+}
+#block a{
+    position: relative;	 
+	cursor: pointer;
+	line-height: 0; 
+	text-decoration: none;
+}
+#block a::after{
+    display: block;
+	position: absolute;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: white; 
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+#block a:hover:after,
+#block a:focus:after{
+    width: 100%;
 }
 .events li { 
     display     : flex; 
